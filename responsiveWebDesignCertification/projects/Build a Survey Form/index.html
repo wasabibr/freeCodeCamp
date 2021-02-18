@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<!--
+
+-->
+
+<html>
+    <head>
+		<title></title>
+		<meta name="description" content="Survey Form">
+		<meta name="keywords" content="HTML5, CSS3">
+		<meta name="author" content="Jefferson Leandro Ramos de Oliveira">
+		<link rel="stylesheet" type="text/css" href="css/folhadeestilo.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">RETROGAME PLACE</h1>
+            <p id="description">Thank you! Your information will help us improve this site.</p>
+        </header>
+        <main>
+            <div>
+                <div class="plane">
+                    <form id="survey-form">
+                        <div class="form-group">
+                            <label id="name-label" for="name">Name</label>
+                            <input type="text" name="name" id="name" class="form-control box-content" placeholder="Enter your name" required="">
+                        </div>
+                        <div class="form-group">
+                            <label id="email-label" for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control box-content" placeholder="Enter your Email" required="">
+                        </div>
+                        <div class="form-group">
+                            <label id="number-label" for="number" >Age (optional)</label>
+                            <input type="number" name="age" id="number" min="10" max="99" class="form-control box-content" placeholder="Age">
+                        </div>
+                        <div class="form-group">
+                            <p>Which option best describes your current role?</p>
+                            <select id="dropdown" name="role" class="form-control box-content" required="">
+                                <option disabled="" selected="" value=""> Select current role </option>
+                                <option value="student">Student</option>
+                                <option value="job">Full Time Job</option>
+                                <option value="learner">Full Time Learner</option>
+                                <option value="preferNo">Prefer not to say</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <p>Do you consider yourself a gamer?</p>
+                            <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely</label>
+                            <label><input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+                            <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+                        </div>
+
+                        <div>
+                            <p>What is your favorite video game platform?</p>
+                            <select id="dropdown" name="platform" class="box-content">
+                                <option value="" selected=""> The chosen one </option>
+                                <option value="3DO">3DO</option>
+                                <option value="Atari">Atari</option>
+                                <option value="Commodore">Commodore</option>
+                                <option value="Intellivision">Intellivision</option>
+                                <option value="Vectrex">Vectrex</option>
+                                <option value="Handheld">Handheld</option>
+                                <option value="Nintendo">Nintendo</option>
+                                <option value="Sega">Sega</option>
+                                <option value="SNK">SNK</option>
+                                <option value="Sony">Sony</option>
+                                <option value="Xbox">Xbox</option>
+                                <option value="Another-platform">Another platform</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <p>Talk about a special moment with a specific game or platform in your life:</p>
+                            <textarea id="comments" class="input-textarea box-content" name="comment" placeholder="Enter your comment here..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <p>What would you like to find on this site?<span class="clue">(Check all that apply)</span></p>
+                            <label><input name="prefer" value="memorabilia" type="checkbox" class="input-checkbox">Memorabilia</label>
+                            <label><input name="prefer" value="gameplay" type="checkbox" class="input-checkbox">Gameplay</label>
+                            <label><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox">City Meetups</label>
+                            <label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox">Wiki</label>
+                            <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox">Forum</label>
+                        </div>
+
+                        <div class="form-group">
+                            <p>Any comments or suggestions?</p>
+                            <textarea id="comments" class="input-textarea box-content" name="comment" placeholder="Enter your comment here..."></textarea>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <button type="submit" id="submit" class="submit-button .box-content"><strong>SUBMIT</strong></button>
+                        </div>    
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p class="footer-text"><strong>Made with coffee, music, HTML 5 and CSS 3, by Jefferson Leandro Ramos de Oliveira. <br>&copy; 2020 - All Rights Reversed</strong></p>
+        </footer>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+body {
+/*    background-image: url(../images/game.png);*/
+    background-image: url(https://i.ibb.co/ZNT9Sbq/game.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+}
+
+:root {
+    --plane-bgc: rgba(220, 20, 20, 0.603);
+    --title-bgc: rgba(220, 20, 20, 0.945);
+    --description-bgc: rgba(243, 208, 208, 0.925);
+    --info-bgc: white;
+}
+
+h1, p, label {
+    color: var(--info-bgc);
+    text-shadow: 1px 1px 1px #1f1f1f;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#title {
+    font-family: 'IM Fell Great Primer SC', serif;
+    color: var(--title-bgc);
+    font-size: 3.5rem;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#description {
+    margin-top: 0px;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: var(--description-bgc);
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px rgba(220, 20, 20, 0.945);
+}
+
+.plane {
+    background-color: var(--plane-bgc);
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.box-content {
+    height: 2rem;
+    width: 100%;
+    border-radius: 5Px;
+    border-color: var(--info-bgc);
+    padding: 0.2rem;
+    box-sizing: border-box;
+}
+
+.input-textarea {
+    height: 8rem;
+}
+
+.footer-text {
+    color: var(--info-bgc);
+    text-shadow: 1px 1px 1px #1f1f1f;
+    font-size: 1.1rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--title-bgc);
+    color: inherit;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--info-bgc);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+}
+

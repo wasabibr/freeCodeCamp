@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Exa&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+
+@media (max-width: 900px){
+    .container2 {
+        flex-direction: column;
+    }
+}
+
+*{margin: 0; padding: 0;}
+
+:root {
+    --gray: rgb(230, 226, 226);
+    --gray-shadow: rgb(189, 183, 183);
+    --yellow: #CED300;
+    --red: #D5193E;
+    --blue: #226CB2;
+    --orange: #D06B00;
+    --purple: #C13D91;
+}
+
+h1 {
+    margin: 0.9rem 0px;
+}
+
+body {
+    background-color: #f7f5f5;
+}
+
+/* ------------- header ------------- */
+
+#header {
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex: 1;
+    background-color: #dddddd;
+    position: fixed;
+    height: 66px;
+    width: 100%;
+    border-bottom: 3px solid var(--yellow);
+    border-top: 2px solid var(--yellow);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo {
+    display: flex;
+    height: 100%;
+    width: 30%;
+/*    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;*/
+/*    background-color: mediumorchid;*/
+}
+
+#header-img {
+    height: 79px;
+    width: auto;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+/*
+#nav-bar {
+    display: block;
+    height: 100%;
+    width: 70%;
+    text-align: right;
+    background-color: orangered;
+}
+
+.nav-link {
+    height: 100%;
+    text-decoration: none;
+    background-color: mediumvioletred;
+    margin: 0px 1rem;
+    margin-top: 2rem;
+    font-size: 2.8rem;
+    font-family: 'Manjari', sans-serif;
+    color: black;
+    text-shadow: 1px 1px 1px var(--yellow);
+    padding: 0px;
+}
+
+
+.nav-link:hover {
+    color: var(--yellow);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 20px solid var(--yellow);
+}
+*/
+
+#nav-bar {
+    width: 100%;
+    height: 85%;
+    display: block;
+    text-align: right;
+    font-size: 1.7rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+#nav-bar a {
+    text-decoration: none; 
+    color: black;
+    text-shadow: 1px 1px 1px var(--yellow);
+    margin: 0.8em; 
+    right: 30px; 
+    bottom: 30px;
+}
+#nav-bar a:hover {
+    color: var(--yellow);
+    padding: 10px 0px;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 10px solid var(--yellow);
+}
+
+
+/* ------------- main ------------- */
+
+main {
+    width: 80%;
+    margin: 0px auto;
+
+}
+
+
+/* ------------- container-email ------------- */
+
+#container-email {
+    width: fit-content;
+    background-color: rgb(248, 224, 197);
+    border: 1px solid var(--orange) ;
+    padding: 30px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 25px;
+    margin: 0px auto;
+    margin-top: 120px;
+}
+
+#email {
+    font-size: 1.2rem;
+    background: var(--gray);
+    color: black;
+}
+
+.email-box {
+    height: fit-content;
+    width: fit-content;
+    margin: 0px auto;
+}
+
+.box-content {
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 5Px;
+    border-color: var(--info-bgc);
+    padding: 0.2rem;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    display: block;
+    width: 150px;
+    padding: 0.5rem;
+    background: var(--gray);
+    color: inherit;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--info-bgc);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+}
+
+#form {
+    display: flex;
+}
+
+
+/* ------------- product-details ------------- */
+
+#product-details {
+    padding-top: 100px;
+    width: 100%;
+}
+
+#product-img { /* pac-man - ghost */
+    width: 160px;
+    height: auto;
+}
+
+.grid {
+    display: flex;
+    width: 99.5%;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-shadow: 3px 3px 1px var(--red);
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+.grid-img {
+    padding: 0.5rem;
+    background-color: white;
+}
+
+.grid-content {
+    background-color: var(--gray);
+    padding: 0.4rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    border-left: 6px dashed white;
+}
+
+/*
+.box-content {
+    height: 2.6rem;
+    width: 250px;
+    border-radius: 8Px;
+    border-color: var(--info-bgc);
+    padding: 0.2rem;
+    box-sizing: border-box;
+    margin-right: 0.7rem;
+}
+*/
+
+/* ------------- how-it-works ------------- */
+
+#how-it-works {
+    padding-top: 100px;
+    /*justify-content: center;*/
+    text-align: center;
+}
+
+.video-border {
+    background-color: black;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 1px var(--blue);
+    margin: 0px auto;
+    margin-top: 30px;
+}
+
+
+/* ------------- pricing ------------- */
+
+#pricing {
+    padding-top: 100px;
+    /*justify-content: center;*/
+    text-align: center;
+}
+
+legend {
+    font-family: 'Mansalva', cursive;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+fieldset {
+    padding: 1.5rem 2rem;
+    background-color: white;
+    border: 2px solid var(--purple);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.container2 {
+    min-height: 100px;
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    grid-template-rows: 1fr;
+    grid-gap: 1em;
+    margin-bottom: 1.5em;
+}
+
+
+/* ------------- text ------------- */
+
+.title-text {
+    font-family: 'Mansalva', cursive;
+/*    font-family: Arial, Helvetica, sans-serif;*/
+    font-size: 3rem;
+    text-shadow: 2px 2px 1px black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.video-text {
+    color: var(--blue);
+}
+
+.email-text {
+    color: var(--orange);
+}
+
+.grid-text {
+    color: var(--red);
+}
+
+
+/* ------------- footer ------------- */
+
+.footer {
+    padding-top: 1rem;
+    padding-bottom: 0.2rem;
+    background-color:  #bbbbbb;
+    border-top: 3px solid var(--gray-shadow);
+}
+
+.footer-text {
+    color: black;
+    font-size: 1.1rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
